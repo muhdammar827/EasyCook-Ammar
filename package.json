@@ -1,0 +1,15 @@
+{
+  "name": "easycook",
+  "version": "1.0.0",
+  "description": "EasyCook Recipe Dictionary",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "dependencies": {
+    "electron": "^45.0.0"
+  }
+}

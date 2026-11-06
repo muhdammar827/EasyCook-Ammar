@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EasyCook - Recipe Explorer</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="css/logo.JPG" alt="logo">
+
+        <nav>
+            <a href="index.html" class="active">Recipe Explorer</a>
+            <a href="converter.html">Unit Converter</a>
+        </nav>
+    </header>
+
+    <main>
+        
+        <h1 style="text-align: center;">Discover recipes and plan your meals</h1>
+
+        <section class="search-section">
+
+            <h2>Find Your Favourite Recipes</h2>
+
+            <form id="searchForm">
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Enter recipe name..."
+                >
+
+                <button type="submit">Search</button>
+
+            </form>
+
+            <div class="category-section">
+
+                <label for="categorySelect">
+                    Browse by Category:
+                </label>
+
+                <select id="categorySelect">
+
+                    <option value="">Select Category</option>
+                    <option value="Chicken">Chicken</option>
+                    <option value="Seafood">Seafood</option>
+                    <option value="Vegetarian">Vegetarian</option>
+                    <option value="Dessert">Dessert</option>
+                    <option value="Pasta">Pasta</option>
+                    <option value="Beef">Beef</option>
+
+                </select>
+
+                <button id="categoryButton">
+                    Browse Category
+                </button>
+
+            </div>
+
+        </section>
+
+        <section class="suggestion-section">
+
+            <h2>Recipe Suggestions</h2>
+
+            <p id="suggestionMessage">
+                Search for recipes to receive suggestions.
+            </p>
+
+            <div id="suggestionResults" class="recipe-grid"></div>
+
+        </section>
+
+        <section class="results-section">
+
+            <h2>Recipe Results</h2>
+
+            <p id="statusMessage"></p>
+
+            <div id="recipeResults" class="recipe-grid"></div>
+
+        </section>
+
+        <section>
+            <h2>My Saved Recipes</h2>
+
+            <p>
+                View, edit, and delete your favourite recipes here.
+                Your saved recipes remain available when you reopen the application.
+            </p>
+
+            <div id="mealPlanList">
+                <p>Loading saved recipes...</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>EasyCook Recipe Dictionary Application</p>
+    </footer>
+
+    <script src="js/recipe.js"></script>
+
+</body>
+</html>
